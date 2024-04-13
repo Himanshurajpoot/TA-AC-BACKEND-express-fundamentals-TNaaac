@@ -11,14 +11,6 @@ app.use(logger("dev"))
 app.use(cookie_paesel())
 
 
-
-// app.use(express.json())
-
-// app.use(express.urlencoded({extended: false}))
-
-// app.use(express.static())
-
-
 app.use((req,res,next)=>{
     console.log(req.cookies)
     next()
