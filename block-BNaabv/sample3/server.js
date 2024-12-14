@@ -1,11 +1,8 @@
-
 // require
 let express = require('express');
 let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let app = express();
-
-
 
 
 // middleware
@@ -22,7 +19,6 @@ app.use((req, res, next) => {
   });
    
 // routes
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
